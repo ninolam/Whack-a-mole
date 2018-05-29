@@ -1,0 +1,139 @@
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+   }
+ 
+  .btn{
+    background: none;
+    height: 60px;
+    width: 160px;
+    border: solid 3px red;
+    font-size: 20px;
+    cursor: pointer;
+   }
+  .btn2{
+    background: none;
+    height: 60px;
+    width: 160px;
+    border: solid 3px blue;
+    font-size: 20px;
+    cursor: pointer;
+   }
+   .rond {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     border: solid;
+   }
+
+   .game-container {
+     width: 60%;
+     margin: 0 auto;
+     flex-wrap: wrap;
+     display: flex;
+     position: relative;
+     cursor: url("../imgs/hammer3.png"),auto;
+   }
+
+   .taupe {
+     width: 100px;
+     height: 100px;
+     margin: 10px 0 0 10px;
+   }
+   .taupe:active {
+    transform: scale(0.5);
+   }
+
+   .is-active {
+     display: block;
+   }
+
+   .start {
+     width: 100%;
+     height: 100vh;
+     background: #FFFFFF;
+     position: absolute;
+     top:0;
+   }
+
+   .divbtn {
+     text-align: center;
+     margin-top: 50vh;
+     transform: translateY(-50%);
+   }
+    .title-start{
+       text-align: center;
+     }
+
+   .stop {
+     width: 100%;
+     height: 100vh;
+     background-color: white;
+     position: absolute;
+     top:0;
+     display: none;
+   }
+   .restart {
+     text-align: center;
+     margin-top: 50vh;
+     transform: translateY(-50%);
+   }
+
+   .lastPoint {
+     font-family: "Arial", sans-serif;
+     font-size: 45px;
+     font-weight: bold;
+     text-align: center;
+     margin-top: -250px;
+   }
+   .points {
+     font-family: "Arial", sans-serif;
+     font-size: 25px;
+     font-weight: bold;
+     text-align: center;
+   }
+
+   .container {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .time {
+     font-family: "Arial", sans-serif;
+     font-size: 25px;
+     font-weight: bold;
+     width: 50px;
+     padding-right: 30px;
+   }
+
+   .title {
+     font-family: "Arial", sans-serif;
+     font-size: 30px;
+     font-weight: 300;
+     text-align:center;
+     padding-top: 20px;
+   }
+   
+   /*mobile*/
+   @media (max-width:500px){
+    .rond {
+        width: 100px;
+        height: 100px;
+      }
+   .title-start{
+     font-size: 15px;
+   }
+
+ }
+ /*tablette & desktop*/
+ @media (max-width:900px){
+   .rond {
+     width: 70px;
+     height: 70px;
+   }
+   .taupe {
+     width: 50px;
+     height: 50px;
+     margin: 10px 0 0 10px;
+   }
+ }
